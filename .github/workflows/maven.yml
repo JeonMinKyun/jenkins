@@ -28,7 +28,7 @@ jobs:
         distribution: 'temurin'
         cache: maven # Maven 의존성 캐시 활성화
     - name: Build with Maven
-      run: mvn clean install -DskipTests -f ./pom.xml # 빌드 및 의존성 설치, 테스트는 건너뛰기
+      run: mvn clean install -DskipTests -f ./SpringProjectForJenkins/pom.xml # 빌드 및 의존성 설치, 테스트는 건너뛰기
 
     - name: Deploy to Tomcat Server (Optional)
       run: mvn tomcat:deploy -DskipTests # Tomcat 서버에 WAR 파일 배포 (배포 설정 필요) - org.apache.tomcat.maven:tomcat9-maven-plugin 플러그인을 사용
