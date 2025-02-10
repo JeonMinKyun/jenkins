@@ -35,4 +35,4 @@ jobs:
       env:
         TOMCAT_USERNAME: tomcat #${{ secrets.TOMCAT_USERNAME }}  # Tomcat 사용자명
         TOMCAT_PASSWORD: tomcat #${{ secrets.TOMCAT_PASSWORD }}  # Tomcat 비밀번호
-        TOMCAT_URL : https://82c3-14-36-141-71.ngrok-free.app/
+        TOMCAT_URL : https://0a31-14-36-141-71.ngrok-free.app
