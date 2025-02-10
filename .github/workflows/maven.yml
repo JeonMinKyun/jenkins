@@ -33,5 +33,6 @@ jobs:
     - name: Deploy to Tomcat Server (Optional)
       run: mvn tomcat:deploy -DskipTests # Tomcat 서버에 WAR 파일 배포 (배포 설정 필요) - org.apache.tomcat.maven:tomcat9-maven-plugin 플러그인을 사용
       env:
-        TOMCAT_USERNAME: ${{ secrets.TOMCAT_USERNAME }}  # Tomcat 사용자명
-        TOMCAT_PASSWORD: ${{ secrets.TOMCAT_PASSWORD }}  # Tomcat 비밀번호
+        TOMCAT_USERNAME: tomcat #${{ secrets.TOMCAT_USERNAME }}  # Tomcat 사용자명
+        TOMCAT_PASSWORD: tomcat #${{ secrets.TOMCAT_PASSWORD }}  # Tomcat 비밀번호
+        TOMCAT_URL : https://42dc-14-36-141-71.ngrok-free.app
