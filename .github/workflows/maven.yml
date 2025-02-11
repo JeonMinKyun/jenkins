@@ -25,7 +25,3 @@ jobs:
       run: |
         mvn tomcat:deploy -DskipTests -f ./SpringProjectForJenkins/pom.xml || \
         mvn tomcat:redeploy -DskipTests -f ./SpringProjectForJenkins/pom.xml
-      env:
-        TOMCAT_USERNAME: 'tomcat'
-        TOMCAT_PASSWORD: 'tomcat'
-        TOMCAT_URL: 'https://5922-14-36-141-71.ngrok-free.app/manager/text'
