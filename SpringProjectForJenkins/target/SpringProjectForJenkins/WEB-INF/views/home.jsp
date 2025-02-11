@@ -13,6 +13,8 @@
 <body>
 		<div class="container">
 			<h3>${result}</h3>
+			<h3>home jsp 작업 추가 했습니다</h3>
+			<h4>Go Go!!!</h4>
 		</div>
 </body>
 </html>
