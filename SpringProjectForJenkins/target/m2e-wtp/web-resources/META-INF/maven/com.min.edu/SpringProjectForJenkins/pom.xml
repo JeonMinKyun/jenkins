@@ -243,12 +243,14 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-war-plugin</artifactId>
 				<version>3.3.2</version>
-				<configuration>
+				<!--<configuration>
 					<warSourceDirectory>src/main/webapp</warSourceDirectory>
 					<webXml>src/main/webapp/WEB-INF/web.xml</webXml>
-				</configuration>		
+				</configuration>
+				-->		
 			</plugin>
 			
+			<!-- 
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>tomcat-maven-plugin</artifactId>
@@ -259,7 +261,8 @@
 					<username>tomcat</username>
 					<password>tomcat</password>
 				</configuration>
-			</plugin>			
+			</plugin>
+			-->			
 		</plugins>
   </build>
 </project>
